@@ -15,7 +15,7 @@ const NewNoteForm = ({ users }) => {
 
   const [title, setTitle] = useState("");
   const [text, setText] = useState("");
-  const [userId, setUserId] = useState("");
+  const [userId, setUserId] = useState(users[0]?.id);
 
   const onTitleChange = ({ target }) => {
     setTitle(target.value);
