@@ -43,7 +43,6 @@ const NewUserForm = () => {
   const onPwdChange = ({ target }) => setPassword(target.value);
   const onRolesChange = ({ target }) => {
     const values = Array.from(target.selectedOptions, (option) => option.value);
-    console.log(values);
     setRoles(values);
   };
 
